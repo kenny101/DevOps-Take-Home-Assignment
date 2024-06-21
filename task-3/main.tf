@@ -23,7 +23,7 @@ variable "ami_id" {
 }
 
 variable "ssh_key_name" {
-  default = "YOUR-SSH-KEYPAIR"
+  default = "YOUR-SSH-KEYPAIR" # replace with your ssh key pair
 }
 
 resource "aws_vpc" "my_vpc" {
