@@ -25,5 +25,5 @@ This is a simplier implementation of backing up and restoring sqlite databases. 
 If we want to automate this process even more, a cron job can be scheduled on a linux system so that the script runs for example every day at a certain time. The cron job entry bellow can be added so that the backup script is ran everyday at 12am and any backups older than 3 days will be removed.
 
 ```bash
-0 0 * * * python3 backup.py --database-dir /path/to/databases --backup-dir /path/to/backups --keep-backup-days 3
+0 0 * * * python3 backup.py --database-dir /path/to/database.db --backup-dir /path/to/backup.db --keep-backup-days 3
 ```
